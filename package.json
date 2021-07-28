@@ -1,0 +1,52 @@
+{
+  "name": "md-file-tree-enhanced",
+  "version": "0.1.1",
+  "author": "xlzy520",
+  "description": "生成文件目录列表到Markdown文件中",
+  "keywords": [
+    "md",
+    "file",
+    "tree"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlzy520/md-file-tree.git"
+  },
+  "homepage": "https://github.com/xlzy520/md-file-tree#readme",
+  "bin": {
+    "md-file-tree-enhanced": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "watch": "npm run build -- --watch",
+    "release": "bumpp --commit --push --tag && npm run build && npm publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@jsdevtools/readdir-enhanced": "^6.0.4",
+    "bumpp": "^6.0.6",
+    "event-state": "^0.3.5",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.7.0",
+    "@types/fs-extra": "^9.0.11",
+    "@types/node": "^16.4.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "tsup": "^4.12.5",
+    "typescript": "^4.3.5"
+  }
+}
