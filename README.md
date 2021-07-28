@@ -1,4 +1,4 @@
-# node-file-tree-md
+# md-file-tree-enhanced
 
 Generate markdown tree of all the files in a directory, recursively.Custom directory name, file name
 生成文件目录列表到Markdown文件中，可以设置过滤的文件后缀名,或自定义目录名、文件名
@@ -6,6 +6,10 @@ Generate markdown tree of all the files in a directory, recursively.Custom direc
 ## How to use?
 
 ### Install the script
+```bash
+npm i md-file-tree-enhanced
+# or pnpm or yarn
+```
 
 ### Usage
 options extends [readdir-enhanced](https://github.com/JS-DevTools/readdir-enhanced)
