@@ -10,9 +10,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xlzy520/md-file-tree.git"
+    "url": "git+https://github.com/xlzy520/md-file-tree-enhanced.git"
   },
-  "homepage": "https://github.com/xlzy520/md-file-tree#readme",
+  "homepage": "https://github.com/xlzy520/md-file-tree-enhanced#readme",
   "bin": {
     "md-file-tree-enhanced": "./dist/index.js"
   },
